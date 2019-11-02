@@ -1,0 +1,16 @@
+<svg viewport-fill="yellow">
+  <text x="50%" y="25%"
+        font-family="System-Regular" fill="black"
+        font-size="30" font-weight="bold"
+        text-anchor="middle">Initial</text>
+  <use id="js1-button" href="#push-button" class="btn" y="100%-180">
+    <set href="#text" attributeName="text-buffer" to="Load js1" />
+  </use>
+  <use id="js2-button" href="#push-button" class="btn" y="100%-120">
+    <set href="#text" attributeName="text-buffer" to="Load js2" />
+  </use>
+  <use id="js3-button" href="#push-button" class="btn">
+    <set href="#text" attributeName="text-buffer" to="Load js3" />
+  </use>
+
+</svg>
