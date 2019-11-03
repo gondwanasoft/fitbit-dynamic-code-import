@@ -20,5 +20,5 @@ export function waitForMemory(onMemory, arg) {   // 4.8 remove if unused (and al
     );
 }
 
-export function mem(s) {console.log(s+" mem used: "+memory.js.used);}  // TODO 4.8 remove (and all refs)
+export function mem(s) {console.log(`${s} mem used: ${memory.js.used}; mem free: ${memory.js.total-memory.js.used}`);}  // TODO 4.8 remove (and all refs)
 // TODO 4.8 remove all refs to mem-wait.js, and delete file

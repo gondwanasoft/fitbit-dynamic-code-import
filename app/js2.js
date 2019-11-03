@@ -1,8 +1,9 @@
 //console.log(`js2.js is executing`);
 
 export function importedFunction() {
-  let bloat = '';
-  for (let i=0; i<2000; i++) bloat += '1234567890';
   console.log(`js2.js importedFunction() is executing`);
-  console.log(`js2.js importedFunction(): bloat.length = ${bloat.length}`);
+  console.log(`${0}`);
+  let bloat = new ArrayBuffer(40000);
+  console.log(`${1}`);
+  console.log(`js2.js importedFunction(): bloat.length = ${bloat.byteLength}`);
 }
