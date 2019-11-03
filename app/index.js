@@ -24,7 +24,7 @@ function importCode(importer) {
   // importer: something like ()=>import("./js3")
   importer()
     .then(({importedFunction}) => {
-      console.log(`importCode(): after import, which returned a ${typeof(importedFunction)}`);
+      //console.log(`importCode(): after import, which returned a ${typeof(importedFunction)}`);
       mem('importCode(): after import,');
       importedFunction();
       mem('importCode(): after running importedFunction(),');
